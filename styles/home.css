@@ -1,0 +1,68 @@
+
+/* Hero */
+.hero-container {
+  background-image: url("../images/sun.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-container > .hero-content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+padding: 12px 24px;
+background-color: #000;
+opacity: .5;
+font-size: 1.25rem;
+letter-spacing: 10px;
+}
+
+/* About */
+
+.about-wrapper {
+  max-width: 980px;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.about-wrapper > p:nth-of-type(1) {
+  font-style: italic;
+}
+
+.about-wrapper > p:nth-of-type(2) {
+  font-style: justify;
+}
+
+.about-wrapper > .about-me-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.about-wrapper > .about-me-content > .about-content-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-wrapper > .about-me-content > .about-content-photo-wrapper > .profile-icon-wrapper {
+  padding: 15px;
+}
+.about-wrapper > .about-me-content > .about-content-photo-wrapper img {
+  width: 80%;
+  height: 65%;
+  padding-top: 25px;
+  filter: opacity(.95)
+}
+
+.about-wrapper > .about-me-content > p {
+  margin: 0;
+  text-align: justify;
+}

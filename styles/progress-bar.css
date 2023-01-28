@@ -1,0 +1,7 @@
+.skill-container {
+  padding: 15px 0;
+}
+
+.skill-container > .skills-icon-wrapper {
+  text-align: left;
+}
