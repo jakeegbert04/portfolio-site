@@ -5,7 +5,12 @@
   position: fixed;
   top:0;
   z-index: 1;
-  width: 100%
+  width: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 4px 27px -5px rgba(0,0,0,0.75);
 }
 
 .navigation-wrapper > .link-wrapper {
@@ -34,6 +39,5 @@
   background-color: #ccc;
   color: white;
 }
-
 
 

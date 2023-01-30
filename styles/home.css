@@ -59,10 +59,133 @@ letter-spacing: 10px;
   width: 80%;
   height: 65%;
   padding-top: 25px;
-  filter: opacity(.95)
+  filter: opacity(.95);
 }
 
 .about-wrapper > .about-me-content > p {
   margin: 0;
   text-align: justify;
 }
+
+/* Accolades */
+
+.accolades-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background-color: #616161;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.accolades-wrapper span {
+  font-size: 24px;
+}
+
+/* Portfolio Parallax BG */
+
+.portfolio-bg-wrapper {
+  background-image: url("/images/sun.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  filter: grayscale(85%);
+}
+
+.portfolio-bg-wrapper > .portfolio-bg-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  }
+
+  /* Portfolio Grid */
+
+  .portfolio-items-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    cursor: pointer;
+  }
+  
+  .portfolio-items-grid > .portfolio-image-wrapper,
+  .portfolio-items-grid img {
+    transition: .1s ease-in-out all;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-items-grid > .portfolio-image-wrapper:hover {
+    filter: opacity(.5);
+  }
+
+  /* Contact Prallax */
+  .contact-bg {
+    background-image: url(/images/stars.jpg);
+    filter: grayscale(0%);
+  }
+  
+  /* Contact Container */
+  .contact-info-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info-container > div {
+    padding: 15px;
+  }
+
+.contact-info-container > .contact-info-right {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form {
+  margin-top: 50px;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form >.form-group {
+display: flex;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid lightgray;
+  }
+
+
+.contact-info-container > .contact-info-right > .contact-info-form input[type="text"]:last-child {
+ width: 100%
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form button {
+  color: white;
+  background-color: black;
+  user-select: none;
+  border: none;
+  padding: 10px;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 15px;
+  float: right;
+  cursor: pointer;
+  transition: .1s ease-in-out all;
+ }
+
+ .contact-info-container > .contact-info-right > .contact-info-form button:hover {
+  color:black;
+  background-color: #ccc;
+ }
+
+ /* Footer */
+
+ 
